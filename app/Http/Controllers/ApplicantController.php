@@ -11,26 +11,6 @@ class ApplicantController extends Controller
      * Show all applicants with search and filtering
      * GET /applicants
      */
-    public function index(Request $request)
-    {
-        // Get the search keyword from the request (if user searched for something)
-        $search = $request->input('search');
-        
-        // Get the filter status from the request (if user filtered by status)
-        $filterStatus = $request->input('status');
-        
-        // Start building the database query
-        $query = Applicant::query();
-        
-        // If there is a search keyword, search in name and email fields
-        if ($search) {
-            $query->where('name', 'LIKE', '%' . $search . '%')
-                  ->orWhere('email', 'LIKE', '%' . $search . '%');
-        }
-        
-        // If there is a status filter, filter by that status
-        if ($filterStatus) {
-            $query->where('status', $filterStatus);
         }
         
         // Get all applicants from the database (with pagination for better performance)
