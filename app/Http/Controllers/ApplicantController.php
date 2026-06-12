@@ -23,7 +23,14 @@ class ApplicantController extends Controller
         $query = Applicant::query();
         
         // If there is a search keyword, search in name and email fields
-        if ($search) {us);
+        if ($search) {
+            $query->where('name', 'LIKE', '%' . $search . '%')
+                  ->orWhere('email', 'LIKE', '%' . $search . '%');
+        }
+        
+        // If there is a status filter, filter by that status
+        if ($filterStatus) {
+            $query->where('status', $filterStatus);
         }
         
         // Get all applicants from the database (with pagination for better performance)
