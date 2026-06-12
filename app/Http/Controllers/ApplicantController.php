@@ -11,6 +11,11 @@ class ApplicantController extends Controller
      * Show all applicants with search and filtering
      * GET /applicants
      */
+    public function index(Request $request)
+    {
+        // Get the search keyword from the request (if user searched for something)
+        $search = $request->input('search');
+        
         }
         
         // Get all applicants from the database (with pagination for better performance)
