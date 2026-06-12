@@ -16,6 +16,10 @@ class ApplicantController extends Controller
         // Get the search keyword from the request (if user searched for something)
         $search = $request->input('search');
         
+        // Get the filter status from the request (if user filtered by status)
+        $filterStatus = $request->input('status');
+        
+        // Start building the database query
         }
         
         // Get all applicants from the database (with pagination for better performance)
