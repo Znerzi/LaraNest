@@ -20,6 +20,10 @@ class ApplicantController extends Controller
         $filterStatus = $request->input('status');
         
         // Start building the database query
+        $query = Applicant::query();
+        
+        // If there is a search keyword, search in name and email fields
+        if ($search) {us);
         }
         
         // Get all applicants from the database (with pagination for better performance)
