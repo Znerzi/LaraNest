@@ -256,6 +256,15 @@
             color: #383d41;
         }
         
+
+            
+            .actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
     <!-- Navigation bar -->
     <nav>
         <a href="{{ route('applicants.index') }}">Home</a>
