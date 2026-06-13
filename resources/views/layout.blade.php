@@ -268,6 +268,12 @@
         
         .badge-rejected {
             background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        /* Responsive design for mobile */
+        @media (max-width: 768px) {
+            .form-row {
             
             .actions {
                 flex-direction: column;
