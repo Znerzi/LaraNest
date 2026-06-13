@@ -256,42 +256,6 @@
             color: #383d41;
         }
         
-        .badge-under-review {
-            background-color: #fff3cd;
-            color: #856404;
-        }
-        
-        .badge-accepted {
-            background-color: #d4edda;
-            color: #155724;
-        }
-        
-        .badge-rejected {
-            background-color: #f8d7da;
-            color: #721c24;
-        }
-        
-        /* Responsive design for mobile */
-        @media (max-width: 768px) {
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-            
-            table {
-                font-size: 0.9rem;
-            }
-            
-            table th, table td {
-                padding: 0.75rem;
-            }
-            
-            .actions {
-                flex-direction: column;
-            }
-        }
-    </style>
-</head>
-<body>
     <!-- Navigation bar -->
     <nav>
         <a href="{{ route('applicants.index') }}">Home</a>
