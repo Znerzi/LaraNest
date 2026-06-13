@@ -274,6 +274,10 @@
         /* Responsive design for mobile */
         @media (max-width: 768px) {
             .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            table {
             
             .actions {
                 flex-direction: column;
