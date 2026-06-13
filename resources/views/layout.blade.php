@@ -278,6 +278,12 @@
             }
             
             table {
+                font-size: 0.9rem;
+            }
+            
+            table th, table td {
+                padding: 0.75rem;
+            }
             
             .actions {
                 flex-direction: column;
