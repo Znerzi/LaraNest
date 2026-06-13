@@ -256,7 +256,18 @@
             color: #383d41;
         }
         
-
+        .badge-under-review {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        
+        .badge-accepted {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .badge-rejected {
+            background-color: #f8d7da;
             
             .actions {
                 flex-direction: column;
