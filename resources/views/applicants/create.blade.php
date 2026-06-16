@@ -41,6 +41,14 @@
             @enderror
         </div>
         
+        <!-- Two columns for phone and position -->
+        <div class="form-row">
+            <!-- Applicant's Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input 
+                    type="tel" 
+                    id="phone" 
         <!-- Applicant's Years of Experience -->
         <div class="form-group">
             <label for="experience">Years of Experience *</label>
