@@ -49,6 +49,17 @@
                 <input 
                     type="tel" 
                     id="phone" 
+                    name="phone" 
+                    placeholder="Enter phone number"
+                    value="{{ old('phone') }}"
+                    required
+                >
+                @error('phone')
+                    <p style="color: red; font-size: 0.9rem;">{{ $message }}</p>
+                @enderror
+            </div>
+            
+            <!-- Position Applied For -->
         <!-- Applicant's Years of Experience -->
         <div class="form-group">
             <label for="experience">Years of Experience *</label>
