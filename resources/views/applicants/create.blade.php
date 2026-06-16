@@ -60,6 +60,12 @@
             </div>
             
             <!-- Position Applied For -->
+            <div class="form-group">
+                <label for="position">Position Applied For *</label>
+                <input 
+                    type="text" 
+                    id="position" 
+                    name="position" 
         <!-- Applicant's Years of Experience -->
         <div class="form-group">
             <label for="experience">Years of Experience *</label>
