@@ -54,6 +54,11 @@
                 required
             >
             @error('experience')
+                <p style="color: red; font-size: 0.9rem;">{{ $message }}</p>
+            @enderror
+        </div>
+        
+        <!-- Applicant's Cover Letter or Description -->
         <div class="form-group">
             <label for="description">Cover Letter / Description</label>
             <textarea 
