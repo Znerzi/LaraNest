@@ -66,6 +66,16 @@
                     type="text" 
                     id="position" 
                     name="position" 
+                    placeholder="e.g., Software Developer, Manager"
+                    value="{{ old('position') }}"
+                    required
+                >
+                @error('position')
+                    <p style="color: red; font-size: 0.9rem;">{{ $message }}</p>
+                @enderror
+            </div>
+        </div>
+        
         <!-- Applicant's Years of Experience -->
         <div class="form-group">
             <label for="experience">Years of Experience *</label>
