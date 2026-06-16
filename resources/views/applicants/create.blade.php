@@ -50,6 +50,10 @@
                 name="experience" 
                 placeholder="e.g., 5"
                 min="0"
+                value="{{ old('experience') }}"
+                required
+            >
+            @error('experience')
         <div class="form-group">
             <label for="description">Cover Letter / Description</label>
             <textarea 
