@@ -41,41 +41,6 @@
             @enderror
         </div>
         
-        <!-- Two columns for phone and position -->
-        <div class="form-row">
-            <!-- Applicant's Phone Number -->
-            <div class="form-group">
-                <label for="phone">Phone Number *</label>
-                <input 
-                    type="tel" 
-                    id="phone" 
-                    name="phone" 
-                    placeholder="Enter phone number"
-                    value="{{ old('phone') }}"
-                    required
-                >
-                @error('phone')
-                    <p style="color: red; font-size: 0.9rem;">{{ $message }}</p>
-                @enderror
-            </div>
-            
-            <!-- Position Applied For -->
-            <div class="form-group">
-                <label for="position">Position Applied For *</label>
-                <input 
-                    type="text" 
-                    id="position" 
-                    name="position" 
-                    placeholder="e.g., Software Developer, Manager"
-                    value="{{ old('position') }}"
-                    required
-                >
-                @error('position')
-                    <p style="color: red; font-size: 0.9rem;">{{ $message }}</p>
-                @enderror
-            </div>
-        </div>
-        
         <!-- Applicant's Years of Experience -->
         <div class="form-group">
             <label for="experience">Years of Experience *</label>
@@ -85,15 +50,6 @@
                 name="experience" 
                 placeholder="e.g., 5"
                 min="0"
-                value="{{ old('experience') }}"
-                required
-            >
-            @error('experience')
-                <p style="color: red; font-size: 0.9rem;">{{ $message }}</p>
-            @enderror
-        </div>
-        
-        <!-- Applicant's Cover Letter or Description -->
         <div class="form-group">
             <label for="description">Cover Letter / Description</label>
             <textarea 
